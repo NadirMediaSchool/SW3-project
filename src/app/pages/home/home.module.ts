@@ -6,6 +6,7 @@ import { HomeComponent } from './home.component';
 
 import {CdkMenuItemRadio, CdkMenuItemCheckbox, CdkMenuGroup, CdkMenu, CdkMenuTrigger, CdkMenuItem, CdkMenuBar,} from '@angular/cdk/menu';
 import { MegaMenuModule } from 'primeng/megamenu';
+import { PanelMenuModule } from 'primeng/panelmenu';
 
 
 @NgModule({
@@ -15,7 +16,7 @@ import { MegaMenuModule } from 'primeng/megamenu';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    MegaMenuModule,
+    MegaMenuModule,PanelMenuModule,
     CdkMenuBar, CdkMenuItem, CdkMenuTrigger, CdkMenu, CdkMenuGroup, CdkMenuItemCheckbox, CdkMenuItemRadio,
   ]
 })
