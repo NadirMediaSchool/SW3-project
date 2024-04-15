@@ -1,0 +1,18 @@
+[
+  {
+     "prenom":"Marcel",
+     "nom":"TATON",
+     "mail":"marcel.taton@mediaschool.me",
+     "date_naissance":"4/12/2006",
+     "couleur_favorite":"jaune",
+     "hobbies":["lire", "nager", "faire du vélo"]
+  },
+  {
+     "prenom":"Elodie",
+     "nom":"MAGDAL",
+     "mail":"eslodie.magdal@mediaschool.me",
+     "date_naissance":"25/5/2003",
+     "couleur_favorite":"vert",
+     "hobbies":["lire", "nager", "faire du vélo"]
+  }
+]

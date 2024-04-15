@@ -1,0 +1,54 @@
+
+<div>
+  <a [routerLink]="['/pages/home']">Page home</a> <br>
+  <a [routerLink]="['/pages/contacts']">Page Contacts</a>
+
+</div>
+<div style="margin-bottom: 5em;">
+  <h2> Exemple de NG Style</h2>
+  <div [ngStyle]="{'background-color': backgroundColor}" class="container">
+    <h1>Changer la couleur de fond</h1>
+    <button *ngFor="let color of colors" (click)="changeColor(color)">
+      Changer pour {{ color }}
+    </button>
+  </div>
+</div>
+
+<div style="margin-bottom: 5em;">
+
+  <h2> Exemple de NG IF</h2>
+<div class="container">
+<button (click)="displayImage(1)">Afficher Image 1</button>
+<button (click)="displayImage(2)">Afficher Image 2</button>
+</div>
+<div>
+  <img *ngIf="showImage1" src="assets/images/image1.jpg" alt="Image 1">
+  <img *ngIf="showImage2" src="assets/images/image2.png" alt="Image 2">
+</div>
+</div>
+
+<div>
+  <h2> Exemple de NG For</h2>
+<table  class="container">
+  <thead>
+    <tr>
+      <th>Année</th>
+      <th>Titre</th>
+      <th>Label</th>
+      <th>Pistes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let album of data">
+      <td>{{ album.year }}</td>
+      <td>{{ album.title }}</td>
+      <td>{{ album.label }}</td>
+      <td>
+        <ul>
+          <li *ngFor="let track of album.tracks">{{ track }}</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
